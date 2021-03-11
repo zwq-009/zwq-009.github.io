@@ -1,468 +1,242 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta property="og:type" content="website">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/null">
 <meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary"><title>Hexo</title><link ref="canonical" href="http://example.com/index.html"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
-var CONFIG = {
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/null"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
-  assistSearch: undefined,
-  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
-  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
-  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
-  postWidget: {"endText":true},
-  nightMode: {"enable":true},
-  back2top: {"enable":true},
-  codeblock: {"style":"default","highlight":"light","wordWrap":false},
-  reward: false,
-  fancybox: false,
-  zoomImage: {"gapAside":"20px"},
-  galleryWaterfall: undefined,
-  lazyload: false,
-  pjax: undefined,
-  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
-  shortcuts: undefined,
-  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
-  sourcePath: {"js":"js","css":"css","images":"images"},
-};
-
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.2.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Hexo</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/03/11/%E8%BD%AE%E6%92%AD%E5%9B%BE%E7%9A%84%E4%BD%BF%E7%94%A8/">轮播图的使用</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-03-11</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-11</span></span></div></header><div class="post-body"><div class="post-excerpt"></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/03/09/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE/">获取当前地理位置</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-03-09</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-09</span></span></div></header><div class="post-body"><div class="post-excerpt">
-        <h2 id="获取当前城市地址"   >
-          <a href="#获取当前城市地址" class="heading-link"><i class="fas fa-link"></i></a><a href="#获取当前城市地址" class="headerlink" title="获取当前城市地址"></a>获取当前城市地址</h2>
-      
-        <h3 id="1、在工程目录index-html中引入："   >
-          <a href="#1、在工程目录index-html中引入：" class="heading-link"><i class="fas fa-link"></i></a><a href="#1、在工程目录index-html中引入：" class="headerlink" title="1、在工程目录index.html中引入："></a>1、在工程目录index.html中引入：</h3>
-      <figure class="highlight javascript"><figcaption><span>hljs</span></figcaption><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span> src=<span class="string">&quot;http://api.map.baidu.com/api?v=2.0&amp;ak=您的密钥&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></div></figure>
-
-<p>ps：秘钥可以去百度开发者平台申请</p>
-
-        <h3 id="2、在build-webpack-base-conf-js（与entry同级）中配置："   >
-          <a href="#2、在build-webpack-base-conf-js（与entry同级）中配置：" class="heading-link"><i class="fas fa-link"></i></a><a href="#2、在build-webpack-base-conf-js（与entry同级）中配置：" class="headerlink" title="2、在build/webpack.base.conf.js（与entry同级）中配置："></a>2、在build/webpack.base.conf.js（与entry同级）中配置：</h3>
-      <figure class="highlight javascript"><figcaption><span>hljs</span></figcaption><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">externals:&#123;    <span class="string">&quot;BMap&quot;</span>:<span class="string">&quot;BMap&quot;</span>&#125;,</span><br></pre></td></tr></table></div></figure>
-
-<p><img   src="https://img-blog.csdnimg.cn/20181230010301700.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mjk0MTYxOQ==,size_16,color_FFFFFF,t_70" style="width: image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,tepx;height: t_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mjk0MTYpx;" ></p>
-
-        <h3 id="3、重新运行一下npm-install或者yarn；"   >
-          <a href="#3、重新运行一下npm-install或者yarn；" class="heading-link"><i class="fas fa-link"></i></a><a href="#3、重新运行一下npm-install或者yarn；" class="headerlink" title="3、重新运行一下npm install或者yarn；"></a>3、重新运行一下npm install或者yarn；</h3>
-      
-        <h3 id="4、配置好以后到对应需要获取城市名的页面引入百度地图对象-BMap："   >
-          <a href="#4、配置好以后到对应需要获取城市名的页面引入百度地图对象-BMap：" class="heading-link"><i class="fas fa-link"></i></a><a href="#4、配置好以后到对应需要获取城市名的页面引入百度地图对象-BMap：" class="headerlink" title="4、配置好以后到对应需要获取城市名的页面引入百度地图对象 BMap："></a>4、配置好以后到对应需要获取城市名的页面引入百度地图对象 BMap：</h3>
-      <figure class="highlight javascript"><figcaption><span>hljs</span></figcaption><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> BMap <span class="keyword">from</span> <span class="string">&#x27;BMap&#x27;</span></span><br></pre></td></tr></table></div></figure>
-
-
-        <h3 id="5、获取城市："   >
-          <a href="#5、获取城市：" class="heading-link"><i class="fas fa-link"></i></a><a href="#5、获取城市：" class="headerlink" title="5、获取城市："></a>5、获取城市：</h3>
-      <p>html部分</p>
-<figure class="highlight html"><figcaption><span>hljs xml</span></figcaption><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;LocationCity&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span>       <span class="comment">&lt;!-- 渲染层 --&gt;</span></span><br></pre></td></tr></table></div></figure>
-
-<p>js部分</p>
-<figure class="highlight javascript"><figcaption><span>hljs</span></figcaption><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span>&#123;    <span class="function"><span class="title">data</span>(<span class="params"></span>)</span>&#123;        <span class="keyword">return</span>&#123;            <span class="attr">LocationCity</span>:<span class="string">&quot;正在定位&quot;</span>    <span class="comment">//给渲染层定义一个初始值        &#125;    &#125;,    mounted()&#123;        this.city()    //触发获取城市方法    &#125;,    methods:&#123;        city()&#123;    //定义获取城市方法            const geolocation = new BMap.Geolocation();            var _this = this            geolocation.getCurrentPosition(function getinfo(position)&#123;                let city = position.address.city;             //获取城市信息                let province = position.address.province;    //获取省份信息                _this.LocationCity = city            &#125;, function(e) &#123;                _this.LocationCity = &quot;定位失败&quot;            &#125;, &#123;provider: &#x27;baidu&#x27;&#125;);		        &#125;    &#125;&#125;</span></span><br></pre></td></tr></table></div></figure>
-
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/11/04/%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%98/">部分面试题</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-11-04</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-09</span></span></div></header><div class="post-body"><div class="post-excerpt">
-        <h4 id="1-什么是语义化"   >
-          <a href="#1-什么是语义化" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-什么是语义化" class="headerlink" title="1.什么是语义化"></a>1.什么是语义化</h4>
-      <p>用正确的标签做正确的事情。</p>
-<p>语义化标签的好处</p>
-<ul>
-<li>易于用户阅读，样式丢失的时候能让页面呈现清晰的结构。</li>
-<li>有利于SEO，搜索引擎根据标签来确定上下文和各个关键字的权重。</li>
-<li>方便其他设备解析，如盲人阅读器根据语义渲染网页</li>
-<li>有利于开发和维护，语义化更具可读性，代码更好维护，与CSS3关系更和谐。</li>
-</ul>
-
-        <h4 id="2-cookie、sessionStorage和localStorage的区别。"   >
-          <a href="#2-cookie、sessionStorage和localStorage的区别。" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-cookie、sessionStorage和localStorage的区别。" class="headerlink" title="2.cookie、sessionStorage和localStorage的区别。"></a>2.<code>cookie</code>、<code>sessionStorage</code>和<code>localStorage</code>的区别。</h4>
-      <p>上面提到的技术名词，都是在客户端以键值对存储的存储机制，并且只能将值存储为字符串。</p>
-<div class="table-container"><table>
-<thead>
-<tr>
-<th></th>
-<th><code>cookie</code></th>
-<th><code>localStorage</code></th>
-<th><code>sessionStorage</code></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>由谁初始化</td>
-<td>客户端或服务器，服务器可以使用<code>Set-Cookie</code>请求头。</td>
-<td>客户端</td>
-<td>客户端</td>
-</tr>
-<tr>
-<td>过期时间</td>
-<td>手动设置</td>
-<td>永不过期</td>
-<td>当前页面关闭时</td>
-</tr>
-<tr>
-<td>在当前浏览器会话（browser sessions）中是否保持不变</td>
-<td>取决于是否设置了过期时间</td>
-<td>是</td>
-<td>否</td>
-</tr>
-<tr>
-<td>是否随着每个 HTTP 请求发送给服务器</td>
-<td>是，Cookies 会通过<code>Cookie</code>请求头，自动发送给服务器</td>
-<td>否</td>
-<td>否</td>
-</tr>
-<tr>
-<td>容量（每个域名）</td>
-<td>4kb</td>
-<td>5MB</td>
-<td>5MB</td>
-</tr>
-<tr>
-<td>访问权限</td>
-<td>任意窗口</td>
-<td>任意窗口</td>
-<td>当前页面窗口</td>
-</tr>
-</tbody></table></div>
-
-        <h4 id="3-为什么最好把-CSS-的-lt-link-gt-标签放在-lt-head-gt-lt-head-gt-之间？为什么最好把-JS-的-lt-script-gt-标签恰好放在-lt-body-gt-之前，有例外情况吗？"   >
-          <a href="#3-为什么最好把-CSS-的-lt-link-gt-标签放在-lt-head-gt-lt-head-gt-之间？为什么最好把-JS-的-lt-script-gt-标签恰好放在-lt-body-gt-之前，有例外情况吗？" class="heading-link"><i class="fas fa-link"></i></a><a href="#3-为什么最好把-CSS-的-lt-link-gt-标签放在-lt-head-gt-lt-head-gt-之间？为什么最好把-JS-的-lt-script-gt-标签恰好放在-lt-body-gt-之前，有例外情况吗？" class="headerlink" title="3.为什么最好把 CSS 的&lt;link&gt;标签放在&lt;head&gt;&lt;/head&gt;之间？为什么最好把 JS 的&lt;script&gt;标签恰好放在&lt;/body&gt;之前，有例外情况吗？"></a>3.为什么最好把 CSS 的<code>&lt;link&gt;</code>标签放在<code>&lt;head&gt;&lt;/head&gt;</code>之间？为什么最好把 JS 的<code>&lt;script&gt;</code>标签恰好放在<code>&lt;/body&gt;</code>之前，有例外情况吗？</h4>
-      <p>link不会影响dom解析，但是会影响dom渲染</p>
-<p>script会影响dom解析</p>
-<p>  把<code>&lt;link&gt;</code>放在<code>&lt;head&gt;</code>中  </p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">把&lt;link&gt;标签放在&lt;head&gt;&lt;&#x2F;head&gt;之间是规范要求的内容。此外，这种做法可以让页面逐步呈现，提高了用户体验。如果将样式表放在文档底部附近，会使许多浏览器（包括 Internet Explorer）不能逐步呈现页面。一些浏览器会阻止渲染，以避免在页面样式发生变化时，重新绘制页面中的元素。这种做法可以防止呈现给用户空白的页面或没有样式的内容。</span><br></pre></td></tr></table></div></figure>
-
-<p>  把<code>&lt;script&gt;</code>标签恰好放在<code>&lt;/body&gt;</code>之前  </p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">脚本在下载和执行期间会阻止 HTML 解析。把&lt;script&gt;标签放在底部，保证 HTML 首先完成解析，将页面尽早呈现给用户。</span><br><span class="line"></span><br><span class="line">例外情况是当你的脚本里包含document.write()时。但是现在，document.write()不推荐使用。同时，将&lt;script&gt;标签放在底部，意味着浏览器不能开始下载脚本，直到整个文档（document）被解析。也许，对此比较好的做法是，&lt;script&gt;使用defer属性，放在&lt;head&gt;中。</span><br></pre></td></tr></table></div></figure>
-
-
-
-        <h4 id="4-什么是渐进式渲染（progressive-rendering）？"   >
-          <a href="#4-什么是渐进式渲染（progressive-rendering）？" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-什么是渐进式渲染（progressive-rendering）？" class="headerlink" title="4.什么是渐进式渲染（progressive rendering）？"></a>4.什么是渐进式渲染（progressive rendering）？</h4>
-      <p>渐进式渲染是用于提高网页性能（尤其是提高用户感知的加载速度），以尽快呈现页面的技术。在以前互联网带宽较小的时期，这种技术更为普遍。如今，移动终端的盛行，而移动网络往往不稳定，渐进式渲染在现代前端开发中仍然有用武之地。</p>
-<p>一些举例：</p>
-<ul>
-<li>图片懒加载——页面上的图片不会一次性全部加载。当用户滚动页面到图片部分时，JavaScript 将加载并显示图像。</li>
-<li>确定显示内容的优先级（分层次渲染）——为了尽快将页面呈现给用户，页面只包含基本的最少量的 CSS、脚本和内容，然后可以使用延迟加载脚本或监听<code>DOMContentLoaded</code>/<code>load</code>事件加载其他资源和内容。</li>
-<li>异步加载 HTML 片段——当页面通过后台渲染时，把 HTML 拆分，通过异步请求，分块发送给浏览器。</li>
-</ul>
-
-        <h4 id="5-viewport"   >
-          <a href="#5-viewport" class="heading-link"><i class="fas fa-link"></i></a><a href="#5-viewport" class="headerlink" title="5.viewport"></a>5.viewport</h4>
-      <p>Viewport ：是用户网页的可视区域。</p>
-<p>在移动端浏览器当中，存在着两种视口，一种是ideal viewport（也就是我们说的设备大小），另一种是layout viewport（网页的宽度是多少）。<br>举个例子：如果我们的屏幕是320像素   480像素的大小（iPhone4），假设在浏览器中，320像素的屏幕宽度能够展示980像素宽度的内容。那么320像素的宽度就是ideal viewport，而能够显示的980像素的宽度就是layout viewport</p>
-
-        <h4 id="6-Reflow和Repaint"   >
-          <a href="#6-Reflow和Repaint" class="heading-link"><i class="fas fa-link"></i></a><a href="#6-Reflow和Repaint" class="headerlink" title="6.Reflow和Repaint"></a>6.Reflow和Repaint</h4>
-      <p>Reflow：当涉及到DOM节点的布局属性发生变化时，就会重新计算该属性，浏览器会重新描绘相应的元素，此过程叫Reflow（回流或重排）。</p>
-<p>Repaint：当影响DOM元素可见性的属性发生变化 (如 color) 时, 浏览器会重新描绘相应的元素, 此过程称为Repaint（重绘）。因此重排必然会引起重绘。</p>
-
-        <h4 id="7-引起Repaint和Reflow的一些操作"   >
-          <a href="#7-引起Repaint和Reflow的一些操作" class="heading-link"><i class="fas fa-link"></i></a><a href="#7-引起Repaint和Reflow的一些操作" class="headerlink" title="7.引起Repaint和Reflow的一些操作"></a>7.引起Repaint和Reflow的一些操作</h4>
-      <ul>
-<li><p>调整窗口大小</p>
-</li>
-<li><p>字体大小</p>
-</li>
-<li><p>样式表变动</p>
-</li>
-<li><p>元素内容变化，尤其是输入控件</p>
-</li>
-<li><p>CSS伪类激活，在用户交互过程中发生</p>
-</li>
-<li><p>DOM操作，DOM元素增删、修改</p>
-</li>
-<li><p>width, clientWidth, scrollTop等布局宽高的计算</p>
-<p>Repaint和Reflow是不可避免的，只能说对性能的影响减到最小，给出下面几条建议：</p>
-</li>
-<li><p>避免逐条更改样式。建议集中修改样式，例如操作className。</p>
-</li>
-<li><p>避免频繁操作DOM。创建一个documentFragment或div，在它上面应用所有DOM操作，最后添加到文档里。设置display:none的元素上操作，最后显示出来。</p>
-</li>
-<li><p>避免频繁读取元素几何属性（例如scrollTop）。绝对定位具有复杂动画的元素。</p>
-</li>
-<li><p>绝对定位使它脱离文档流，避免引起父元素及后续元素大量的回流</p>
-</li>
-</ul>
-
-        <h4 id="8-img中的alt和元素的title属性作用"   >
-          <a href="#8-img中的alt和元素的title属性作用" class="heading-link"><i class="fas fa-link"></i></a><a href="#8-img中的alt和元素的title属性作用" class="headerlink" title="8.img中的alt和元素的title属性作用"></a>8.img中的alt和元素的title属性作用</h4>
-      <ul>
-<li>img的alt属性<br><br>如果无法显示图像，浏览器将显示alt指定的内容</li>
-<li>元素title属性<br><br>在鼠标移到元素上时显示title的内容</li>
-</ul>
-
-        <h4 id="9-href和src区别"   >
-          <a href="#9-href和src区别" class="heading-link"><i class="fas fa-link"></i></a><a href="#9-href和src区别" class="headerlink" title="9.href和src区别"></a>9.href和src区别</h4>
-      <ul>
-<li>href <br><br>href标识超文本引用，用在link和a等元素上，href是引用和页面关联，是在当前元素和引用资源之间建立联系<br><br>若在文档中添加href ，浏览器会识别该文档为 CSS 文件，就会并行下载资源并且不会停止对当前文档的处理。这也是为什么建议使用 link 方式加载 CSS，而不是使用 @import 方式。</li>
-<li>src <br><br>src表示引用资源，替换当前元素，用在img，script上，src是页面内容不可缺少的一部分。<br><br>当浏览器解析到src ，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等也如此，类似于将所指向资源应用到当前内容。这也是为什么建议把 js 脚本放在底部而不是头部的原因。</li>
-</ul>
-
-        <h4 id="10-浏览器的渲染过程"   >
-          <a href="#10-浏览器的渲染过程" class="heading-link"><i class="fas fa-link"></i></a><a href="#10-浏览器的渲染过程" class="headerlink" title="10.浏览器的渲染过程"></a>10.浏览器的渲染过程</h4>
-      <ol>
-<li>解析HTML生成DOM树。</li>
-<li>解析CSS生成CSSOM规则树。</li>
-<li>将DOM树与CSSOM规则树合并在一起生成渲染树。</li>
-<li>遍历渲染树开始布局，计算每个节点的位置大小信息。</li>
-<li>将渲染树每个节点绘制到屏幕。</li>
-</ol>
-
-        <h4 id="11-doctype有什么用"   >
-          <a href="#11-doctype有什么用" class="heading-link"><i class="fas fa-link"></i></a><a href="#11-doctype有什么用" class="headerlink" title="11.doctype有什么用"></a>11.doctype有什么用</h4>
-      <!DOCTYPE><p> 声明位于文档中的最前面的位置，处于 <html> 标签之前。</p>
-<p>作用：</p>
-<p>1.告知浏览器文档使用哪种 HTML 或 XHTML 规范。</p>
-<p>2.告诉浏览器按照何种规范解析页（如果你的页面没有DOCTYPE的声明，那么浏览器会进入Quirks模式）</p>
-<p>浏览器本身分为两种模式，一种是标准模式，一种是怪异模式，浏览器通过doctype来区分这两种模式，doctype在html中的作用就是触发浏览器的标准模式，如果html中省略了doctype，浏览器就会进入到Quirks模式的怪异状态，在这种模式下，有些样式会和标准模式存在差异，而html标准和dom标准值规定了标准模式下的行为，没有对怪异模式做出规定，因此不同浏览器在怪异模式下的处理也是不同的，所以一定要在html开头使用doctype。</p>
-
-        <h4 id="12-标准模式-严格模式-和怪异模式-混杂模式-和近标准模式区别："   >
-          <a href="#12-标准模式-严格模式-和怪异模式-混杂模式-和近标准模式区别：" class="heading-link"><i class="fas fa-link"></i></a><a href="#12-标准模式-严格模式-和怪异模式-混杂模式-和近标准模式区别：" class="headerlink" title="12.标准模式(严格模式)和怪异模式(混杂模式)和近标准模式区别："></a>12.标准模式(严格模式)和怪异模式(混杂模式)和近标准模式区别：</h4>
-      <p>目前渲染模式的分类主要有3种：标准模式（又名严格模式）、近似标准模式、混杂模式（又名怪异模式）。</p>
-<pre><code>首先，混杂模式是不可取的，因为其没有兼容性可言。在IE（IE6~IE9）中，混杂模式即使用IE5.5内核来解析并渲染页面。其次，近似标准模式是在尽可能遵循标准的基础上兼容部分非标准代码，比如一些已经弃用的标签等。标准模式则是对统一标准实现最好的模式，它要求标签必须闭合（唯一不需要闭合的就是DOCTYPE标签），不能使用已经废弃的标签等等。    
-
-标准模式和混杂模式区别：
-盒模型：在 W3C 标准中，如果设置一个元素的宽度和高度，指的是元素内容的宽度和高度，而在 Quirks 模式下，IE 的宽度和高度还包含了 padding 和 border。
-   设置行内元素的高宽：在 Standards 模式下，给等行内元素设置 wdith 和 height 都不会生效，而在 quirks 模式下，则会生效。
-设置百分比的高度：在 standards 模式下，一个元素的高度是由其包含的内容来决定的，如果父元素没有设置百分比的高度，子元素设置一个百分比的高度是无效的用
-margin:0 auto 设置水平居中：使用 margin:0 auto 在 standards 模式下可以使元素水平居中，但在 quirks 模式下却会失效。</code></pre>
-
-        <h4 id="13-一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验。"   >
-          <a href="#13-一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验。" class="heading-link"><i class="fas fa-link"></i></a><a href="#13-一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验。" class="headerlink" title="13.一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验。"></a>13.一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验。</h4>
-      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.图片懒加载，在页面上的未可视区域可以添加一个滚动条事件，判断图片位置与浏览器顶端的距离与页面的距离，如果前者小于后者，优先加载。</span><br><span class="line">2.如果为幻灯片、相册等，可以使用图片预加载技术，将当前展示图片的前一张和后一张优先下载。</span><br><span class="line">3.如果图片为 css 图片，可以使用 CSSsprite，SVGsprite，Iconfont、Base64 等技术。</span><br><span class="line">4.如果图片过大，可以使用特殊编码的图片，加载时会先加载一张压缩的特别厉害的缩略图，以提高用户体验。</span><br><span class="line">5.如果图片展示区域小于图片的真实大小，则因在服务器端根据业务需要先行进行图片压缩，图片压缩后大小与展示一致。</span><br><span class="line">6.图片可以来自其他的服务器</span><br></pre></td></tr></table></div></figure>
-
-
-        <h4 id="14-iframe有那些缺点？"   >
-          <a href="#14-iframe有那些缺点？" class="heading-link"><i class="fas fa-link"></i></a><a href="#14-iframe有那些缺点？" class="headerlink" title="14.iframe有那些缺点？"></a>14.iframe有那些缺点？</h4>
-      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.iframe会阻塞主页面的Onload事件；</span><br><span class="line">2.搜索引擎的检索程序无法解读这种页面，不利于SEO;</span><br><span class="line">3.iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。</span><br></pre></td></tr></table></div></figure>
-
-<p>使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript。动态给iframe添加src属性值，这样可以绕开以上两个问题。</p>
-
-        <h4 id="15-HTML与XHTML-二者有什么区别，你觉得应该使用哪一个并说出理由。"   >
-          <a href="#15-HTML与XHTML-二者有什么区别，你觉得应该使用哪一个并说出理由。" class="heading-link"><i class="fas fa-link"></i></a><a href="#15-HTML与XHTML-二者有什么区别，你觉得应该使用哪一个并说出理由。" class="headerlink" title="15.HTML与XHTML   二者有什么区别，你觉得应该使用哪一个并说出理由。"></a>15.HTML与XHTML   二者有什么区别，你觉得应该使用哪一个并说出理由。</h4>
-      <p>1.XHTML 元素必须被正确地嵌套。</p>
-<p>错误：<p><span>thisis example.</p></span></p>
-<p>正确：<p><span>thisis example.</span></p></p>
-<p>2.XHTML 元素必须被关闭。</p>
-<p>错误：<p>this isexample.</p>
-<p>正确：<p>this isexample.</p></p>
-<p>3.标签名必须用小写字母。</p>
-<p>错误：<P>this isexample.<P></p>
-<p>正确：<p>this isexample.</p></p>
-<p>3.1空标签也必须被关闭</p>
-<p>错误：<br></p>
-<p>正确：<br/></p>
-<p>4.XHTML 文档必须拥有根元素。</p>
-<p>所有的 XHTML 元素必须被嵌套于 <html> 根元素中。</p>
-
-        <h4 id="16-常见的浏览器内核有哪些？"   >
-          <a href="#16-常见的浏览器内核有哪些？" class="heading-link"><i class="fas fa-link"></i></a><a href="#16-常见的浏览器内核有哪些？" class="headerlink" title="16.常见的浏览器内核有哪些？"></a>16.常见的浏览器内核有哪些？</h4>
-      <p>Trident内核：IE,MaxThon,TT,The World,360,搜狗浏览器等。[又称MSHTML]</p>
-<p>Gecko内核：Netscape6及以上版本，FF,MozillaSuite/SeaMonkey等</p>
-<p>Presto内核：Opera7及以上。     [Opera内核原为：Presto，现为：Blink;]</p>
-<p>Webkit内核：Safari,Chrome等。   [ Chrome的：Blink（WebKit的分支）]</p>
-
-        <h4 id="17-HTML5的form如何关闭自动完成功能？"   >
-          <a href="#17-HTML5的form如何关闭自动完成功能？" class="heading-link"><i class="fas fa-link"></i></a><a href="#17-HTML5的form如何关闭自动完成功能？" class="headerlink" title="17.HTML5的form如何关闭自动完成功能？"></a>17.HTML5的form如何关闭自动完成功能？</h4>
-      <p>给不想要提示的 form 或某个 input 设置为autocomplete=off。</p>
-
-        <h4 id="18-实现不使用-border-画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果。"   >
-          <a href="#18-实现不使用-border-画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果。" class="heading-link"><i class="fas fa-link"></i></a><a href="#18-实现不使用-border-画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果。" class="headerlink" title="18.  实现不使用     border   画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果。"></a>18.  实现不使用     border   画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果。</h4>
-      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div  style&#x3D;&quot;height:1px;overflow:hidden;background:red&quot;&gt;&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></div></figure>
-
-
-        <h4 id="19-title与h1的区别、b与strong的区别、i与em的区别？"   >
-          <a href="#19-title与h1的区别、b与strong的区别、i与em的区别？" class="heading-link"><i class="fas fa-link"></i></a><a href="#19-title与h1的区别、b与strong的区别、i与em的区别？" class="headerlink" title="19.title与h1的区别、b与strong的区别、i与em的区别？"></a>19.title与h1的区别、b与strong的区别、i与em的区别？</h4>
-      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1.title属性没有明确意义只表示是个标题，H1则表示层次明确的标题，对页面信息的抓取也有很大的影响；</span><br><span class="line">2.strong是标明重点内容，有语气加强的含义，使用阅读设备阅读网络时：&lt;strong&gt;会重读，而&lt;B&gt;是展示强调内容。</span><br><span class="line">3.i内容展示为斜体，em表示强调的文本；</span><br><span class="line"></span><br><span class="line">Physical Style Elements -- 自然样式标签</span><br><span class="line">b, i, u, s, pre</span><br><span class="line"></span><br><span class="line">Semantic Style Elements -- 语义样式标签</span><br><span class="line">strong, em, ins, del, code</span><br><span class="line"></span><br><span class="line">应该准确使用语义样式标签, 但不能滥用, 如果不能确定时首选使用自然样式标签。</span><br></pre></td></tr></table></div></figure>
-
-
-        <h4 id="20-请描述下-SEO-中的-TDK-？"   >
-          <a href="#20-请描述下-SEO-中的-TDK-？" class="heading-link"><i class="fas fa-link"></i></a><a href="#20-请描述下-SEO-中的-TDK-？" class="headerlink" title="20.请描述下    SEO    中的    TDK    ？"></a>20.请描述下    SEO    中的    TDK    ？</h4>
-      <p>在SEO中，所谓的TDK其实就是title、description、keywords这三个标签，这三个标签在网站的优化过程中</p>
-<p>title标题标签，description描述标签，keywords关键词标签</p>
-
-        <h4 id="21-简单书写-HTML-代码：请写出一个-html-网站代码，内容为一个图片，链接到-“http-www-baidu-com”-，图片路径为-“-img-logo-png”-为图片设置替换文本-”webfoss”-新网页在新窗口打开；"   >
-          <a href="#21-简单书写-HTML-代码：请写出一个-html-网站代码，内容为一个图片，链接到-“http-www-baidu-com”-，图片路径为-“-img-logo-png”-为图片设置替换文本-”webfoss”-新网页在新窗口打开；" class="heading-link"><i class="fas fa-link"></i></a><a href="#21-简单书写-HTML-代码：请写出一个-html-网站代码，内容为一个图片，链接到-“http-www-baidu-com”-，图片路径为-“-img-logo-png”-为图片设置替换文本-”webfoss”-新网页在新窗口打开；" class="headerlink" title="21. 简单书写    HTML    代码：请写出一个    html    网站代码，内容为一个图片，链接到    “http://www.baidu.com”    ，图片路径为    “./img/logo.png”,    为图片设置替换文本    ”webfoss”,    新网页在新窗口打开；"></a>21. 简单书写    HTML    代码：请写出一个    html    网站代码，内容为一个图片，链接到    “<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="http://www.baidu.com”/" >http://www.baidu.com”</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>    ，图片路径为    “./img/logo.png”,    为图片设置替换文本    ”webfoss”,    新网页在新窗口打开；</h4>
-      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.baidu.com&quot; alt&#x3D;&quot;webfoss&quot; target&#x3D;&quot;_blank&quot;&gt;&lt;img src&#x3D;&quot;.&#x2F;img&#x2F;logo.png&quot;&gt;&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></div></figure>
-
-
-        <h4 id="22-标签上-title-与-alt-属性的区别是什么？"   >
-          <a href="#22-标签上-title-与-alt-属性的区别是什么？" class="heading-link"><i class="fas fa-link"></i></a><a href="#22-标签上-title-与-alt-属性的区别是什么？" class="headerlink" title="22. 标签上    title    与    alt    属性的区别是什么？"></a>22. 标签上    title    与    alt    属性的区别是什么？</h4>
-      <p>alt是给搜索引擎识别，在图像无法显示时的替代文本；title是关于元素的注释信息，主要是给用户解读。当鼠标放到文字或是图片上时有title文字显示。（因为IE不标准）在IE浏览器中alt起到了title的作用，变成文字提示。在定义img对象时，将alt和title属性写全，可以保证在各种浏览器中都能正常使用。 </p>
-
-        <h4 id="23-前端页面有哪三层构成，分别是什么？作用是什么？"   >
-          <a href="#23-前端页面有哪三层构成，分别是什么？作用是什么？" class="heading-link"><i class="fas fa-link"></i></a><a href="#23-前端页面有哪三层构成，分别是什么？作用是什么？" class="headerlink" title="23. 前端页面有哪三层构成，分别是什么？作用是什么？"></a>23. 前端页面有哪三层构成，分别是什么？作用是什么？</h4>
-      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">分成：结构层、表示层、行为层。</span><br><span class="line"></span><br><span class="line">1.结构层（structural layer）</span><br><span class="line">由 HTML 或 XHTML之类的标记语言负责创建。标签，也就是那些出现在尖括号里的单词，对网页内容的语义含义做出了描述，但这些标签不包含任何关于如何显示有关内容的信息。例如，P标签表达了这样一种语义：“这是一个文本段。”</span><br><span class="line"></span><br><span class="line">2.表示层（presentationlayer）</span><br><span class="line">由 CSS 负责创建。 CSS对“如何显示有关内容”的问题做出了回答。</span><br><span class="line"></span><br><span class="line">3.行为层（behaviorlayer）</span><br><span class="line">负责回答“内容应该如何对事件做出反应”这一问题。这是 Javascript 语言和 DOM主宰的领域。</span><br></pre></td></tr></table></div></figure>
-
-
-        <h4 id="24-DIV-CSS-布局较-table-有什么优势？"   >
-          <a href="#24-DIV-CSS-布局较-table-有什么优势？" class="heading-link"><i class="fas fa-link"></i></a><a href="#24-DIV-CSS-布局较-table-有什么优势？" class="headerlink" title="24.DIV+CSS    布局较    table    有什么优势？"></a>24.DIV+CSS    布局较    table    有什么优势？</h4>
-      <p>1、速率更快，页面体积变小，浏览速度变快，这就使得对于某些控制主机流量的网站来说是最大的优势了；</p>
-<p>2、更好地被搜索引擎收录，大部分html页面的样式写入了CSS文件中，便于被搜索引擎采集收录；</p>
-<p>3、对浏览者和浏览器更具优势，由于CSS富含丰富的样式，使页面更加灵活性，它可以根据不同的浏览器，而达到显示效果的统一和不变形；</p>
-<p>4、修改更有效率，由于使用了DIV+CSS制作方法，在修改页面的时候更加容易省时，提高工作效率；</p>
-
-        <h4 id="25-为什么用多个域名存储网站资源更有效？"   >
-          <a href="#25-为什么用多个域名存储网站资源更有效？" class="heading-link"><i class="fas fa-link"></i></a><a href="#25-为什么用多个域名存储网站资源更有效？" class="headerlink" title="25.为什么用多个域名存储网站资源更有效？"></a>25.为什么用多个域名存储网站资源更有效？</h4>
-      <p>1、CDN缓存更方便</p>
-<p>2、突破浏览器并发限制</p>
-<p>3、节约cookie带宽</p>
-<p>4、节约主域名的连接数，优化页面响应速度</p>
-<p>5、防止不必要的安全问题</p>
-
-        <h4 id="26-简要说明一下做好-SEO-需要考虑哪些方面？"   >
-          <a href="#26-简要说明一下做好-SEO-需要考虑哪些方面？" class="heading-link"><i class="fas fa-link"></i></a><a href="#26-简要说明一下做好-SEO-需要考虑哪些方面？" class="headerlink" title="26.简要说明一下做好    SEO    需要考虑哪些方面？"></a>26.简要说明一下做好    SEO    需要考虑哪些方面？</h4>
-      <p>一、内部结构优化</p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.TDK优化：这里的TDK并不止首页，还有栏目页和文章页的TDK，这就是为什么建站的时候选择可以自定义标签的原因。T即title，网站的标题，很!重!要!如果TDK满分10分，T要占到7分左右，标题是蜘蛛过来第一个看的东西，即第一印象，标题必须包含关键词，即网站的功能，网站是做什么产品或是服务的，语句通顺，不要堆砌关键词。D即description，网站描述，是对标题的补充。K即keywords，栏目页和文章页的TDK在后台具体栏目的高级设置里可以找到。</span><br><span class="line">2.301重定向和404报错页面的制作，必须要有，没什么可说的。</span><br><span class="line">3.层级目录：即打开一个页面要多少层级，这个很多网站都忽略，建议在三级以内，减少蜘蛛爬取需要的时间。</span><br><span class="line">4.关键词布局及密度：根据用户浏览页面点击的热力图发现的点击热区，进而将关键词部署到相应地方。即F布局，一个页面内的关键词密度保持在2%-8%之内，这个只是个经验数据，不一定准确。</span><br><span class="line">5.四处一词：TDK+尾部或锚文本。</span><br><span class="line">6.网站导航：即主导航、次导航和面包屑导航，包含关键词、突出重点、使用纯文字，要和相应TDK保持一致。</span><br></pre></td></tr></table></div></figure>
-
-<p>二、内容优化</p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">主要是文章的质量要高，即使不是纯原创，至少也要是高度伪原创，伪原创要选取未收录的或者屏蔽了搜索引擎的网站上的文章，或者是翻译过来的文章，只要是你第一个发的文章，蜘蛛就认为是原创。</span><br></pre></td></tr></table></div></figure>
-
-<p>三、内链优化</p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">总结起来就是增加站内的链接密度，就像蜘蛛网一样，越密集越好，最常见的就是首页、栏目和文章页的相互跳转;LOGO的链接，文章页使用TAG标签和上、下一篇或相关文章，增加页面间的链接数和相关度。</span><br></pre></td></tr></table></div></figure>
-
-<p>四、 外链优化</p>
-<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">一个原则就是内容相关、循序渐进，很多人为了迅速增加外链，疯狂添加，但是权重升不上来的原因就在此。外链的主要方法就是增加友情链接，但是要考察增加的友链质量度，包括PR值，是否有nofollow等标签，正常网站的友链数在30个左右，如果你添加友链的网站有超过50个友链，那并不会对你的网站有多少价值，相反还可能把你的权重更多的分给他。除了友链，增加论坛、新闻、博客、SNS、软文的相关链接也是增加网站外链的一种。</span><br></pre></td></tr></table></div></figure>
-
-
-        <h4 id="27-少写出20个html5标签-并说说各个标签的语义"   >
-          <a href="#27-少写出20个html5标签-并说说各个标签的语义" class="heading-link"><i class="fas fa-link"></i></a><a href="#27-少写出20个html5标签-并说说各个标签的语义" class="headerlink" title="27.少写出20个html5标签,并说说各个标签的语义"></a>27.少写出20个html5标签,并说说各个标签的语义</h4>
-      <figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">section：定义文档中的一个章节；</span><br><span class="line">nav：定义只包含导航链接的章节；</span><br><span class="line">header：定义页面或章节的头部,它经常包含logo，页面标题和导航的目录。</span><br><span class="line">footer：定义页面或章节的尾部,它经常包含版权信息，法律信息链接和反馈建议用的地址。</span><br><span class="line">aside：定义和页面内容关联度较低内容，如果被删除，剩下的内容仍然很合理。</span><br><span class="line">article	:定义文章。</span><br><span class="line">audio :定义声音内容。</span><br><span class="line">bdi: 定义文本的文本方向，使其脱离其周围文本的方向设置。</span><br><span class="line">canvas：定义图形。</span><br><span class="line">command	:定义命令按钮。</span><br><span class="line">datalist: 定义下拉列表。</span><br><span class="line">details: 定义元素的细节。</span><br><span class="line">dialog: 定义对话框或窗口。</span><br><span class="line">embed: 定义外部交互内容或插件。</span><br><span class="line">figcaption: 定义 figure 元素的标题。</span><br><span class="line">figure：定义媒介内容的分组，以及它们的标题。</span><br><span class="line">keygen: 定义生成密钥。</span><br><span class="line">mark :定义有记号的文本。</span><br><span class="line">meter：定义预定义范围内的度量。</span><br><span class="line">output :定义输出的一些类型。</span><br></pre></td></tr></table></div></figure>
-
-
-        <h4 id="28-哪些浏览器支持html5"   >
-          <a href="#28-哪些浏览器支持html5" class="heading-link"><i class="fas fa-link"></i></a><a href="#28-哪些浏览器支持html5" class="headerlink" title="28.哪些浏览器支持html5."></a>28.哪些浏览器支持html5.</h4>
-      <figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">IE9</span><br><span class="line">Firefox <span class="number">3.5</span></span><br><span class="line">Chrome <span class="number">3.0</span></span><br><span class="line">Safari <span class="number">3.0</span></span><br><span class="line">Opera <span class="number">10.5</span></span><br></pre></td></tr></table></div></figure>
-
-
-        <h4 id="29-HTML是什么意思？"   >
-          <a href="#29-HTML是什么意思？" class="heading-link"><i class="fas fa-link"></i></a><a href="#29-HTML是什么意思？" class="headerlink" title="29.HTML是什么意思？"></a>29.HTML是什么意思？</h4>
-      <p>答：超文本标记语言（Hyper Text Markup Language）。“超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。</p>
-
-        <h4 id="30-我们想要在鼠标指向img时浮出一条提示信息，应该使用哪个参数做到？"   >
-          <a href="#30-我们想要在鼠标指向img时浮出一条提示信息，应该使用哪个参数做到？" class="heading-link"><i class="fas fa-link"></i></a><a href="#30-我们想要在鼠标指向img时浮出一条提示信息，应该使用哪个参数做到？" class="headerlink" title="30.我们想要在鼠标指向img时浮出一条提示信息，应该使用哪个参数做到？"></a>30.我们想要在鼠标指向img时浮出一条提示信息，应该使用哪个参数做到？</h4>
-      <p>答：img标签的 alt 属性指定了替代文本，用于在图像无法显示或者用户禁用图像显示时，代替图像显示在浏览器中的内容。</p>
-
-        <h4 id="31-哪种颜色格式支持上百万种颜色，但是不支持无损压缩？"   >
-          <a href="#31-哪种颜色格式支持上百万种颜色，但是不支持无损压缩？" class="heading-link"><i class="fas fa-link"></i></a><a href="#31-哪种颜色格式支持上百万种颜色，但是不支持无损压缩？" class="headerlink" title="31.哪种颜色格式支持上百万种颜色，但是不支持无损压缩？"></a>31.哪种颜色格式支持上百万种颜色，但是不支持无损压缩？</h4>
-      <p>答：bmp格式。</p>
-
-        <h4 id="32-在HTML中，能够实现表格跨列的是？"   >
-          <a href="#32-在HTML中，能够实现表格跨列的是？" class="heading-link"><i class="fas fa-link"></i></a><a href="#32-在HTML中，能够实现表格跨列的是？" class="headerlink" title="32.在HTML中，能够实现表格跨列的是？"></a>32.在HTML中，能够实现表格跨列的是？</h4>
-      <p>答：一般使用<td>元素的colspan属性来实现单元格跨列操作，使用<td>元素的rowspan属性来实现单元格的跨行操作。</p>
-<figure class="highlight javascript"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;table border=<span class="string">&quot;1&quot;</span>&gt;</span><br><span class="line">  &lt;tr&gt;</span><br><span class="line">    &lt;th&gt;星期一&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;星期二&lt;/th&gt;</span><br><span class="line">  &lt;/tr&gt;</span><br><span class="line">  &lt;tr&gt;</span><br><span class="line">    &lt;td colspan=<span class="string">&quot;2&quot;</span>&gt;星期天&lt;/td&gt;</span><br><span class="line">  &lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></div></figure>
-
-</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/10/30/hello-world/">Hello World</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-10-30</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-09</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>Welcome to <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>! This is your very first post. Check <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> or you can ask me on <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>.<br>欢迎来到<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" >Hexo</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>！这是您的第一篇文章，查看<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/index.html" >文档</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>格式信息。如果在使用Hexo时遇到任何<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/troubleshooting.html" >问题</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>，您可以在故障排除中找到答案，也可以在<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>上询问我。</p>
-
-        <h2 id="快速开始"   >
-          <a href="#快速开始" class="heading-link"><i class="fas fa-link"></i></a><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2>
-      
-        <h3 id="发布一篇博客"   >
-          <a href="#发布一篇博客" class="heading-link"><i class="fas fa-link"></i></a><a href="#发布一篇博客" class="headerlink" title="发布一篇博客"></a>发布一篇博客</h3>
-      <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;我个人博客的第一篇博客&quot;</span></span><br></pre></td></tr></table></div></figure>
-
-<p>More info: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-
-        <h3 id="启动服务"   >
-          <a href="#启动服务" class="heading-link"><i class="fas fa-link"></i></a><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h3>
-      <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></div></figure>
-
-<p>更多信息: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/server.html" >服务器</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-
-        <h3 id="生成静态文件"   >
-          <a href="#生成静态文件" class="heading-link"><i class="fas fa-link"></i></a><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3>
-      <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></div></figure>
-
-<p>更多信息: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/generating" >生成器</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-
-        <h3 id="部署到远程站点"   >
-          <a href="#部署到远程站点" class="heading-link"><i class="fas fa-link"></i></a><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3>
-      <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></div></figure>
-
-<p>更多信息: <span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/generating" >部署</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
-
-        <h3 id="发布博客"   >
-          <a href="#发布博客" class="heading-link"><i class="fas fa-link"></i></a><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h3>
-      <p>在本地博客文件夹根目录(git bash)输入：</p>
-<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;我个人博客的第一篇博客&quot;</span> </span><br><span class="line"></span><br><span class="line">$ hexo g //生成网页 </span><br><span class="line"></span><br><span class="line">$ hexo d //部署到远端(github)</span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
-
-<p>现在打开我们的博客网站：<span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://zwq-009.github.io/" >https://zwq-009.github.io/</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>,会看到网页</p>
-<p>（显示可能有延迟 所以可以采用以下方法(git bash)：</p>
-<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean //清理缓存 </span><br><span class="line"></span><br><span class="line">$ hexo g //重新生成博客代码 </span><br><span class="line"></span><br><span class="line">$ hexo d //部署到本地</span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
-
-
-
-
-
-
-
-
-
-
-
-</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/10/01/%E6%88%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我个人博客的第一篇博客</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-10-01</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-09</span></span></div></header><div class="post-body"><div class="post-excerpt">
-        <h1 id="写作介绍"   >
-          <a href="#写作介绍" class="heading-link"><i class="fas fa-link"></i></a><a href="#写作介绍" class="headerlink" title="写作介绍"></a>写作介绍</h1>
-      
-        <h2 id="1，字体介绍"   >
-          <a href="#1，字体介绍" class="heading-link"><i class="fas fa-link"></i></a><a href="#1，字体介绍" class="headerlink" title="1，字体介绍"></a>1，字体介绍</h2>
-      <p><em>这是斜体</em> 或 <em>这也是斜体</em></p>
-<p><strong>这是粗体</strong></p>
-<p><strong><em>这是加粗斜体</em></strong></p>
-<p><del>这是删除线</del></p>
-
-        <h2 id="2，分级标题"   >
-          <a href="#2，分级标题" class="heading-link"><i class="fas fa-link"></i></a><a href="#2，分级标题" class="headerlink" title="2，分级标题"></a>2，分级标题</h2>
-      
-        <h1 id="一级标题"   >
-          <a href="#一级标题" class="heading-link"><i class="fas fa-link"></i></a><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1>
-      
-        <h2 id="二级标题"   >
-          <a href="#二级标题" class="heading-link"><i class="fas fa-link"></i></a><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2>
-      
-        <h3 id="三级标题"   >
-          <a href="#三级标题" class="heading-link"><i class="fas fa-link"></i></a><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3>
-      
-        <h4 id="四级标题"   >
-          <a href="#四级标题" class="heading-link"><i class="fas fa-link"></i></a><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4>
-      
-        <h5 id="五级标题"   >
-          <a href="#五级标题" class="heading-link"><i class="fas fa-link"></i></a><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5>
-      
-        <h6 id="六级标题"   >
-          <a href="#六级标题" class="heading-link"><i class="fas fa-link"></i></a><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6>
-      
-        <h2 id="3，超链接"   >
-          <a href="#3，超链接" class="heading-link"><i class="fas fa-link"></i></a><a href="#3，超链接" class="headerlink" title="3，超链接"></a>3，超链接</h2>
-      <p>写法：</p>
-
-        <h2 id="4-列表"   >
-          <a href="#4-列表" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-列表" class="headerlink" title="4,列表"></a>4,列表</h2>
-      <p>无序列表：</p>
-<p>写法：</p>
-<ul>
-<li>无序列表项1</li>
-</ul>
-<ul>
-<li>无序列表项2</li>
-</ul>
-<ul>
-<li>无序列表项3</li>
-</ul>
-<p>有序列表：</p>
-<p>写法：</p>
-<p>1.有序列表项1</p>
-<p>2.有序列表项2</p>
-<p>3.有序列表项3</p>
-
-        <h2 id="5，插入图片"   >
-          <a href="#5，插入图片" class="heading-link"><i class="fas fa-link"></i></a><a href="#5，插入图片" class="headerlink" title="5，插入图片"></a>5，插入图片</h2>
-      <p>在 Hexo 中插入图片，首先需要将图片放在 source/img/ 文件夹下，然后如下方式进行插入：</p>
-<p><img src="url"></p>
-
-        <h2 id="6，表格"   >
-          <a href="#6，表格" class="heading-link"><i class="fas fa-link"></i></a><a href="#6，表格" class="headerlink" title="6，表格"></a>6，表格</h2>
-      <p>| 表头1|表头2|表头3|表头4</p>
-<p>|-| :- | :-: | -: |</p>
-<p>|默认左对齐|左对齐|居中对其|右对齐|</p>
-<p>|默认左对齐|左对齐|居中对其|右对齐|</p>
-<p>|默认左对齐|左对齐|居中对其|右对齐|</p>
-</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/stun-logo.svg" alt="avatar"></div><p class="sidebar-ov-author__text">hello world</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">5</div><div class="sidebar-ov-state-item__name">归档</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>John Doe</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.2.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script></body></html>
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-03-11 19:59:38'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a></div></div></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/03/11/%E8%BD%AE%E6%92%AD%E5%9B%BE%E7%9A%84%E4%BD%BF%E7%94%A8/" title="轮播图的使用">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="轮播图的使用"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/03/11/%E8%BD%AE%E6%92%AD%E5%9B%BE%E7%9A%84%E4%BD%BF%E7%94%A8/" title="轮播图的使用">轮播图的使用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-11T11:45:19.000Z" title="发表于 2021-03-11 19:45:19">2021-03-11</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/03/09/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE/" title="获取当前地理位置">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="获取当前地理位置"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/03/09/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE/" title="获取当前地理位置">获取当前地理位置</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-03-09T06:31:58.000Z" title="发表于 2021-03-09 14:31:58">2021-03-09</time></span></div><div class="content">获取当前城市地址1、在工程目录index.html中引入：hljs1&lt;script type=&quot;text/javascript&quot; src=&quot;http://api.map.baidu.com/api?v=2.0&amp;ak=您的密钥&quot;&gt;&lt;/script&gt;
+
+ps：秘钥可以去百度开发者平台申请
+2、在build/webpack.base.conf.js（与entry同级）中配置：hljs1externals:&#123;    &quot;BMap&quot;:&quot;BMap&quot;&#125;,
+
+
+3、重新运行一下npm install或者yarn；4、配置好以后到对应需要获取城市名的页面引入百度地图对象 BMap：hljs1import BMap from &#x27;BMap&#x27;
+
+5、获取城市：html部分
+hljs xml1&lt;div&gt;&#123;&#123;LocationCity&#125;&#125;&lt;/div&gt;       &lt;!-- 渲染层 --&gt;
+
+j ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/04/%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%98/" title="部分面试题">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="部分面试题"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/04/%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%98/" title="部分面试题">部分面试题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-04T08:43:17.000Z" title="发表于 2020-11-04 16:43:17">2020-11-04</time></span></div><div class="content">1.什么是语义化用正确的标签做正确的事情。
+语义化标签的好处
+
+易于用户阅读，样式丢失的时候能让页面呈现清晰的结构。
+有利于SEO，搜索引擎根据标签来确定上下文和各个关键字的权重。
+方便其他设备解析，如盲人阅读器根据语义渲染网页
+有利于开发和维护，语义化更具可读性，代码更好维护，与CSS3关系更和谐。
+
+2.cookie、sessionStorage和localStorage的区别。上面提到的技术名词，都是在客户端以键值对存储的存储机制，并且只能将值存储为字符串。
+
+
+
+
+cookie
+localStorage
+sessionStorage
+
+
+
+由谁初始化
+客户端或服务器，服务器可以使用Set-Cookie请求头。
+客户端
+客户端
+
+
+过期时间
+手动设置
+永不过期
+当前页面关闭时
+
+
+在当前浏览器会话（browser sessions）中是否保持不变
+取决于是否设置了过期时间
+是
+否
+
+
+是否随着每个 HTTP 请求发送给服务器
+是，Cookies 会通过Cookie请求头，自动发送给服务器
+否
+否
+
+
+容量（每个域名）
+4kb
+5MB
+5MB
+
+
+访问权限
+任意窗口
+任意窗口
+当前 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/30/hello-world/" title="Hello World">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/30/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-30T13:23:40.594Z" title="发表于 2020-10-30 21:23:40">2020-10-30</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.欢迎来到Hexo！这是您的第一篇文章，查看文档格式信息。如果在使用Hexo时遇到任何问题，您可以在故障排除中找到答案，也可以在GitHub上询问我。
+快速开始发布一篇博客1$ hexo new &quot;我个人博客的第一篇博客&quot;
+
+More info: Writing
+启动服务1$ hexo server
+
+更多信息: 服务器
+生成静态文件1$ hexo generate
+
+更多信息: 生成器
+部署到远程站点1$ hexo deploy
+
+更多信息: 部署
+发布博客在本地博客文件夹根目录(git bash)输入：
+123456$ hexo new &quot;我个人博客的第一篇博客&quot; ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/10/01/%E6%88%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我个人博客的第一篇博客">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我个人博客的第一篇博客"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/01/%E6%88%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我个人博客的第一篇博客">我个人博客的第一篇博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-01T01:04:25.000Z" title="发表于 2020-10-01 09:04:25">2020-10-01</time></span></div><div class="content">写作介绍1，字体介绍这是斜体 或 这也是斜体
+这是粗体
+这是加粗斜体
+这是删除线
+2，分级标题一级标题二级标题三级标题四级标题五级标题六级标题3，超链接写法：
+4,列表无序列表：
+写法：
+
+无序列表项1
+
+
+无序列表项2
+
+
+无序列表项3
+
+有序列表：
+写法：
+1.有序列表项1
+2.有序列表项2
+3.有序列表项3
+5，插入图片在 Hexo 中插入图片，首先需要将图片放在 source/img/ 文件夹下，然后如下方式进行插入：
+
+6，表格| 表头1|表头2|表头3|表头4
+|-| :- | :-: | -: |
+|默认左对齐|左对齐|居中对其|右对齐|
+|默认左对齐|左对齐|居中对其|右对齐|
+|默认左对齐|左对齐|居中对其|右对齐|
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/03/11/%E8%BD%AE%E6%92%AD%E5%9B%BE%E7%9A%84%E4%BD%BF%E7%94%A8/" title="轮播图的使用"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="轮播图的使用"/></a><div class="content"><a class="title" href="/2021/03/11/%E8%BD%AE%E6%92%AD%E5%9B%BE%E7%9A%84%E4%BD%BF%E7%94%A8/" title="轮播图的使用">轮播图的使用</a><time datetime="2021-03-11T11:45:19.000Z" title="发表于 2021-03-11 19:45:19">2021-03-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/09/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE/" title="获取当前地理位置"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="获取当前地理位置"/></a><div class="content"><a class="title" href="/2021/03/09/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE/" title="获取当前地理位置">获取当前地理位置</a><time datetime="2021-03-09T06:31:58.000Z" title="发表于 2021-03-09 14:31:58">2021-03-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/04/%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%98/" title="部分面试题"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="部分面试题"/></a><div class="content"><a class="title" href="/2020/11/04/%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%98/" title="部分面试题">部分面试题</a><time datetime="2020-11-04T08:43:17.000Z" title="发表于 2020-11-04 16:43:17">2020-11-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/30/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2020/10/30/hello-world/" title="Hello World">Hello World</a><time datetime="2020-10-30T13:23:40.594Z" title="发表于 2020-10-30 21:23:40">2020-10-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/10/01/%E6%88%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我个人博客的第一篇博客"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我个人博客的第一篇博客"/></a><div class="content"><a class="title" href="/2020/10/01/%E6%88%91%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我个人博客的第一篇博客">我个人博客的第一篇博客</a><time datetime="2020-10-01T01:04:25.000Z" title="发表于 2020-10-01 09:04:25">2020-10-01</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">三月 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-03-11T11:59:38.576Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By John Doe</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
