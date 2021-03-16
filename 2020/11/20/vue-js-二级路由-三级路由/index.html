@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>vue.js 二级路由/三级路由 | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="为什么要用二级和三级路由？当项目中 有多个  时，就必须使用分级路由； 如果路由不分级，又有多个  ,全部都是定义为一级路由，那么项目中的   的内容显示就会混乱；这是不友好的； 如果对路由进行分级，那么当触发某个二级或三级路由时，此路由就会将对应组件内容传给自己的父级路由组件里面的 ，这样就不会混乱； 一级路由被触发时，自然会找自己所注册的根组件的 二级路由为一级路由添加一个 children">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue.js 二级路由&#x2F;三级路由">
+<meta property="og:url" content="http://example.com/2020/11/20/vue-js-%E4%BA%8C%E7%BA%A7%E8%B7%AF%E7%94%B1-%E4%B8%89%E7%BA%A7%E8%B7%AF%E7%94%B1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="为什么要用二级和三级路由？当项目中 有多个  时，就必须使用分级路由； 如果路由不分级，又有多个  ,全部都是定义为一级路由，那么项目中的   的内容显示就会混乱；这是不友好的； 如果对路由进行分级，那么当触发某个二级或三级路由时，此路由就会将对应组件内容传给自己的父级路由组件里面的 ，这样就不会混乱； 一级路由被触发时，自然会找自己所注册的根组件的 二级路由为一级路由添加一个 children">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://121.40.114.220/wp-content/uploads/2016/11/loner.jpg">
+<meta property="article:published_time" content="2020-11-20T07:50:47.000Z">
+<meta property="article:modified_time" content="2021-03-16T07:54:46.857Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://121.40.114.220/wp-content/uploads/2016/11/loner.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2020/11/20/vue-js-%E4%BA%8C%E7%BA%A7%E8%B7%AF%E7%94%B1-%E4%B8%89%E7%BA%A7%E8%B7%AF%E7%94%B1/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-03-16 15:54:46'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 有链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('http://121.40.114.220/wp-content/uploads/2016/11/loner.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 有链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">vue.js 二级路由/三级路由</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-11-20T07:50:47.000Z" title="发表于 2020-11-20 15:50:47">2020-11-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-16T07:54:46.857Z" title="更新于 2021-03-16 15:54:46">2021-03-16</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h4 id="为什么要用二级和三级路由？"><a href="#为什么要用二级和三级路由？" class="headerlink" title="为什么要用二级和三级路由？"></a>为什么要用二级和三级路由？</h4><p>当项目中 有多个 <router-view> 时，就必须使用分级路由；</p>
+<p>如果路由不分级，又有多个 <router-view> ,全部都是定义为一级路由，那么项目中的  <router-view> 的内容显示就会混乱；这是不友好的；</p>
+<p>如果对路由进行分级，那么当触发某个二级或三级路由时，此路由就会将对应组件内容传给自己的父级路由组件里面的 <router-view>，这样就不会混乱；</p>
+<p>一级路由被触发时，自然会找自己所注册的根组件的<router-view></p>
+<p><strong>二级路由</strong><br>为一级路由添加一个 children 属性数组，并将二级路由放入；</p>
+<p>path 属性 决定 跳转后 url 地址栏的的显示</p>
+<p><img src="https://img-blog.csdn.net/20180822153740862?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0MDg5NTAz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p><img src="https://img-blog.csdn.net/20180822153810309?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0MDg5NTAz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>//main.js<br>//一级路由<br>import About from ‘./components/about/About’</p>
+<p>//二级路由<br>import Contact from ‘./components/about/Contact’<br>import Delivery from ‘./components/about/Delivery’<br>import History from ‘./components/about/History’<br>import OrderingGuide from ‘./components/about/OrderingGuide’</p>
+<p>const router= new VueRouter({<br>  routes:[<br>    {path:’/about’,name:’about’,component:About,children:[<br>        {path:’/about/contsssssssssssssssact’,name:’contactLink’,component:Contact},<br>        {path:’/history’,name:’historyLink’,component:History},<br>        {path:’/‘,name:’deliveryLink’,component:Delivery},<br>        {path:’/orderingGuide’,name:’orderingGuideLink’,component:OrderingGuide},<br>      ]},<br>    {path:’*’,redirect:’/‘}<br>  ],<br>  mode:”history”<br>});</p>
+<p>三级路由和二级路由差不多</p>
+<figure class="highlight javascript"><figcaption><span>hljs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> router= <span class="keyword">new</span> VueRouter(&#123;</span><br><span class="line">  routes:[</span><br><span class="line">    &#123;<span class="attr">path</span>:<span class="string">&#x27;/&#x27;</span>,<span class="attr">name</span>:<span class="string">&#x27;home&#x27;</span>,<span class="attr">component</span>:Home&#125;,</span><br><span class="line">    &#123;<span class="attr">path</span>:<span class="string">&#x27;/menu&#x27;</span>,<span class="attr">name</span>:<span class="string">&#x27;menu&#x27;</span>,<span class="attr">component</span>:Menu&#125;,</span><br><span class="line">    &#123;<span class="attr">path</span>:<span class="string">&#x27;/admin&#x27;</span>,<span class="attr">name</span>:<span class="string">&#x27;admin&#x27;</span>,<span class="attr">component</span>:Admin&#125;,</span><br><span class="line">    &#123;<span class="attr">path</span>:<span class="string">&#x27;/about&#x27;</span>,<span class="attr">name</span>:<span class="string">&#x27;about&#x27;</span>,<span class="attr">component</span>:About,<span class="attr">redirect</span>: &#123;<span class="attr">name</span>:<span class="string">&#x27;contactLink&#x27;</span>&#125;,<span class="attr">children</span>:[   <span class="comment">//二级路由</span></span><br><span class="line">        &#123;<span class="attr">path</span>:<span class="string">&#x27;/about/contact&#x27;</span>,<span class="attr">name</span>:<span class="string">&#x27;contactLink&#x27;</span>,<span class="attr">component</span>:Contact&#125;,</span><br><span class="line">        &#123;<span class="attr">path</span>:<span class="string">&#x27;/history&#x27;</span>,<span class="attr">name</span>:<span class="string">&#x27;historyLink&#x27;</span>,<span class="attr">component</span>:History&#125;,</span><br><span class="line">        &#123;<span class="attr">path</span>:<span class="string">&#x27;/delivery&#x27;</span>,<span class="attr">name</span>:<span class="string">&#x27;deliveryLink&#x27;</span>,<span class="attr">component</span>:Delivery&#125;,</span><br><span class="line">        &#123;<span class="attr">path</span>:<span class="string">&#x27;/orderingGuide&#x27;</span>,<span class="attr">name</span>:<span class="string">&#x27;orderingGuideLink&#x27;</span>,<span class="attr">component</span>:OrderingGuide,<span class="attr">redirect</span>:&#123;<span class="attr">name</span>:<span class="string">&#x27;phonelink&#x27;</span>&#125;,<span class="attr">children</span>: [  <span class="comment">//三级路由</span></span><br><span class="line">            &#123;<span class="attr">path</span>:<span class="string">&#x27;/phone&#x27;</span>,<span class="attr">name</span>:<span class="string">&#x27;phonelink&#x27;</span>,<span class="attr">component</span>:Phone&#125;,</span><br><span class="line">            &#123;<span class="attr">path</span>:<span class="string">&#x27;/name&#x27;</span>,<span class="attr">name</span>:<span class="string">&#x27;namelink&#x27;</span>,<span class="attr">component</span>:Name&#125;</span><br><span class="line">          ]&#125;,</span><br><span class="line">      ]&#125;,</span><br><span class="line">    &#123;<span class="attr">path</span>:<span class="string">&#x27;/login&#x27;</span>,<span class="attr">name</span>:<span class="string">&#x27;login&#x27;</span>,<span class="attr">component</span>:Login&#125;,</span><br><span class="line">    &#123;<span class="attr">path</span>:<span class="string">&#x27;/register&#x27;</span>,<span class="attr">name</span>:<span class="string">&#x27;register&#x27;</span>,<span class="attr">component</span>:Register&#125;,</span><br><span class="line">    &#123;<span class="attr">path</span>:<span class="string">&#x27;*&#x27;</span>,<span class="attr">redirect</span>:<span class="string">&#x27;/&#x27;</span>&#125;</span><br><span class="line">  ],</span><br><span class="line">  mode:<span class="string">&quot;history&quot;</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>ps：秘钥</p>
+<p>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34089503/article/details/81945094">https://blog.csdn.net/qq_34089503/article/details/81945094</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2020/11/20/vue-js-%E4%BA%8C%E7%BA%A7%E8%B7%AF%E7%94%B1-%E4%B8%89%E7%BA%A7%E8%B7%AF%E7%94%B1/">http://example.com/2020/11/20/vue-js-%E4%BA%8C%E7%BA%A7%E8%B7%AF%E7%94%B1-%E4%B8%89%E7%BA%A7%E8%B7%AF%E7%94%B1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Hexo</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="http://121.40.114.220/wp-content/uploads/2016/11/loner.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/12/08/Vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/"><img class="prev-cover" src="http://www.obzhi.com/wp-content/uploads/2021/01/mojie2-1024x470.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Vue响应式原理</div></div></a></div><div class="next-post pull-right"><a href="/2020/10/13/animate%E5%8A%A8%E7%94%BB%E7%9A%84%E5%BC%95%E7%94%A8/"><img class="next-cover" src="http://www.obzhi.com/wp-content/uploads/2021/01/yueguang-1024x320.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">animate动画的引用</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xxxxx" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8%E4%BA%8C%E7%BA%A7%E5%92%8C%E4%B8%89%E7%BA%A7%E8%B7%AF%E7%94%B1%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">为什么要用二级和三级路由？</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/19/%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%88%87%E6%8D%A2/" title="登录注册页面的切换"><img src="http://www.obzhi.com/wp-content/uploads/2020/11/%E9%BB%91%E7%8C%AB.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="登录注册页面的切换"/></a><div class="content"><a class="title" href="/2021/07/19/%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%88%87%E6%8D%A2/" title="登录注册页面的切换">登录注册页面的切换</a><time datetime="2021-07-19T06:54:30.000Z" title="发表于 2021-07-19 14:54:30">2021-07-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/16/%E5%A6%82%E4%BD%95%E5%BC%95%E7%94%A8element-UI%E7%BB%84%E4%BB%B6/" title="如何引用element-UI组件"><img src="http://www.obzhi.com/wp-content/uploads/2020/08/C3F0A095-EFA7-41F5-9162-CDE3FD83D6E1.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何引用element-UI组件"/></a><div class="content"><a class="title" href="/2021/03/16/%E5%A6%82%E4%BD%95%E5%BC%95%E7%94%A8element-UI%E7%BB%84%E4%BB%B6/" title="如何引用element-UI组件">如何引用element-UI组件</a><time datetime="2021-03-16T07:11:57.000Z" title="发表于 2021-03-16 15:11:57">2021-03-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/09/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE/" title="获取当前地理位置"><img src="http://www.obzhi.com/wp-content/uploads/2021/01/mojie2-1024x470.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="获取当前地理位置"/></a><div class="content"><a class="title" href="/2021/03/09/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE/" title="获取当前地理位置">获取当前地理位置</a><time datetime="2021-03-09T06:31:58.000Z" title="发表于 2021-03-09 14:31:58">2021-03-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/12/08/Vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/" title="Vue响应式原理"><img src="http://www.obzhi.com/wp-content/uploads/2021/01/mojie2-1024x470.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue响应式原理"/></a><div class="content"><a class="title" href="/2020/12/08/Vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/" title="Vue响应式原理">Vue响应式原理</a><time datetime="2020-12-08T07:45:47.000Z" title="发表于 2020-12-08 15:45:47">2020-12-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/20/vue-js-%E4%BA%8C%E7%BA%A7%E8%B7%AF%E7%94%B1-%E4%B8%89%E7%BA%A7%E8%B7%AF%E7%94%B1/" title="vue.js 二级路由/三级路由"><img src="http://121.40.114.220/wp-content/uploads/2016/11/loner.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue.js 二级路由/三级路由"/></a><div class="content"><a class="title" href="/2020/11/20/vue-js-%E4%BA%8C%E7%BA%A7%E8%B7%AF%E7%94%B1-%E4%B8%89%E7%BA%A7%E8%B7%AF%E7%94%B1/" title="vue.js 二级路由/三级路由">vue.js 二级路由/三级路由</a><time datetime="2020-11-20T07:50:47.000Z" title="发表于 2020-11-20 15:50:47">2020-11-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By John Doe</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

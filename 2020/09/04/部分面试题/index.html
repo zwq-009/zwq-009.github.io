@@ -1,0 +1,335 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>部分面试题 | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="calc, support, media各自的含义及用法？@support主要是用于检测浏览器是否支持CSS的某个属性，其实就是条件判断，如果支持某个属性，你可以写一套样式，如果不支持某个属性，你也可以提供另外一套样式作为替补。 calc() 函数用于动态计算长度值。 calc()函数支持 “+”, “-“, “*”, “&#x2F;“ 运算； @media 查询，你可以针对不同的媒体类型定义不同的样式。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="部分面试题">
+<meta property="og:url" content="http://example.com/2020/09/04/%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%98/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="calc, support, media各自的含义及用法？@support主要是用于检测浏览器是否支持CSS的某个属性，其实就是条件判断，如果支持某个属性，你可以写一套样式，如果不支持某个属性，你也可以提供另外一套样式作为替补。 calc() 函数用于动态计算长度值。 calc()函数支持 “+”, “-“, “*”, “&#x2F;“ 运算； @media 查询，你可以针对不同的媒体类型定义不同的样式。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.obzhi.com/wp-content/uploads/2021/01/xuejing-1024x640.jpeg">
+<meta property="article:published_time" content="2020-09-04T08:43:17.000Z">
+<meta property="article:modified_time" content="2021-03-16T06:59:40.748Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.obzhi.com/wp-content/uploads/2021/01/xuejing-1024x640.jpeg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2020/09/04/%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%98/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-03-16 14:59:40'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 有链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('http://www.obzhi.com/wp-content/uploads/2021/01/xuejing-1024x640.jpeg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 有链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">部分面试题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-09-04T08:43:17.000Z" title="发表于 2020-09-04 16:43:17">2020-09-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-03-16T06:59:40.748Z" title="更新于 2021-03-16 14:59:40">2021-03-16</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="calc-support-media各自的含义及用法？"><a href="#calc-support-media各自的含义及用法？" class="headerlink" title="calc, support, media各自的含义及用法？"></a>calc, support, media各自的含义及用法？</h2><p>@support主要是用于检测浏览器是否支持CSS的某个属性，其实就是条件判断，如果支持某个属性，你可以写一套样式，如果不支持某个属性，你也可以提供另外一套样式作为替补。</p>
+<p>calc() 函数用于动态计算长度值。 calc()函数支持 “+”, “-“, “*”, “/“ 运算；</p>
+<p>@media 查询，你可以针对不同的媒体类型定义不同的样式。</p>
+<h2 id="css水平、垂直居中的写法，请至少写出4种？"><a href="#css水平、垂直居中的写法，请至少写出4种？" class="headerlink" title="css水平、垂直居中的写法，请至少写出4种？"></a>css水平、垂直居中的写法，请至少写出4种？</h2><blockquote>
+<p>这题考查的是css的基础知识是否全面，所以平时一定要注意多积累</p>
+</blockquote>
+<p><em>水平居中</em></p>
+<ul>
+<li>行内元素: <code>text-align: center</code></li>
+<li>块级元素: <code>margin: 0 auto</code></li>
+<li>position:absolute +left:50%+ transform:translateX(-50%)</li>
+<li><code>display:flex + justify-content: center</code></li>
+</ul>
+<p><em>垂直居中</em></p>
+<ul>
+<li>设置line-height 等于height</li>
+<li>position：absolute +top:50%+ transform:translateY(-50%)</li>
+<li><code>display:flex + align-items: center</code></li>
+<li>display:table+display:table-cell + vertical-align: middle;</li>
+</ul>
+<h2 id="1rem、1em、1vh、1px各自代表的含义？"><a href="#1rem、1em、1vh、1px各自代表的含义？" class="headerlink" title="1rem、1em、1vh、1px各自代表的含义？"></a>1rem、1em、1vh、1px各自代表的含义？</h2><blockquote>
+<p>rem</p>
+</blockquote>
+<p>rem是全部的长度都相对于根元素<html>元素。通常做法是给html元素设置一个字体大小，然后其他元素的长度单位就为rem。</p>
+<blockquote>
+<p>em</p>
+</blockquote>
+<ul>
+<li>子元素字体大小的em是相对于父元素字体大小</li>
+<li>元素的width/height/padding/margin用em的话是相对于该元素的font-size</li>
+</ul>
+<blockquote>
+<p>vw/vh</p>
+</blockquote>
+<p>全称是 Viewport Width 和 Viewport Height，视窗的宽度和高度，相当于 屏幕宽度和高度的 1%，不过，处理宽度的时候%单位更合适，处理高度的 话 vh 单位更好。</p>
+<blockquote>
+<p>px</p>
+</blockquote>
+<p>px像素（Pixel）。相对长度单位。像素px是相对于显示器屏幕分辨率而言的。</p>
+<p>一般电脑的分辨率有{1920*1024}等不同的分辨率</p>
+<p>1920*1024 前者是屏幕宽度总共有1920个像素,后者则是高度为1024个像素</p>
+<h2 id="画一条0-5px的直线？"><a href="#画一条0-5px的直线？" class="headerlink" title="画一条0.5px的直线？"></a>画一条0.5px的直线？</h2><blockquote>
+<p>考查的是css3的transform</p>
+</blockquote>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">height: 1px;</span><br><span class="line">transform: scale(0.5);</span><br></pre></td></tr></table></figure>
+
+<h2 id="说一下盒模型？"><a href="#说一下盒模型？" class="headerlink" title="说一下盒模型？"></a>说一下盒模型？</h2><blockquote>
+<p>盒模型是css中重要的基础知识，也是必考的基础知识</p>
+</blockquote>
+<p>盒模型的组成，由里向外content,padding,border,margin.</p>
+<p>在IE盒子模型中，width表示content+padding+border这三个部分的宽度</p>
+<p>在标准的盒子模型中，width指content部分的宽度</p>
+<p>box-sizing的使用</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">box-sizing: content-box 是W3C盒子模型</span><br><span class="line">box-sizing: border-box 是IE盒子模型</span><br></pre></td></tr></table></figure>
+
+<p>box-sizing的默认属性是content-box</p>
+<h2 id="画一个三角形？"><a href="#画一个三角形？" class="headerlink" title="画一个三角形？"></a>画一个三角形？</h2><blockquote>
+<p>这属于简单的css考查，平时在用组件库的同时，也别忘了原生的css</p>
+</blockquote>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> .a&#123;</span><br><span class="line">            width: 0;</span><br><span class="line">            height: 0;</span><br><span class="line">            border-width: 100px;</span><br><span class="line">            border-style: solid;</span><br><span class="line">            border-color: transparent #0099CC transparent transparent;</span><br><span class="line">            transform: rotate(90deg); /*顺时针旋转90°*/</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;a&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="清除浮动的几种方式，及原理？"><a href="#清除浮动的几种方式，及原理？" class="headerlink" title="清除浮动的几种方式，及原理？"></a>清除浮动的几种方式，及原理？</h2><blockquote>
+<p>清除浮动简单，但这题要引出的是BFC，BFC也是必考的基础知识点</p>
+</blockquote>
+<ul>
+<li><code>::after / &lt;br&gt; / clear: both</code></li>
+<li>创建父级 <code>BFC</code>(overflow:hidden)</li>
+<li>父级设置高度</li>
+</ul>
+<blockquote>
+<p><em>BFC （</em>块级格式化上下文<em>）</em>，是一个独立的渲染区域，让处于 <code>BFC</code> 内部的元素与外部的元素相互隔离，使内外元素的定位不会相互影响。</p>
+</blockquote>
+<p><em>触发条件:</em></p>
+<ul>
+<li>根元素</li>
+<li><code>position: absolute/fixed</code></li>
+<li><code>display: inline-block / table</code></li>
+<li><code>float</code> 元素</li>
+<li><code>ovevflow !== visible</code></li>
+</ul>
+<p><em>规则:</em></p>
+<ul>
+<li>属于同一个 <code>BFC</code> 的两个相邻 <code>Box</code> 垂直排列</li>
+<li>属于同一个 <code>BFC</code> 的两个相邻 <code>Box</code> 的 <code>margin</code> 会发生重叠</li>
+<li><code>BFC</code> 的区域不会与 <code>float</code> 的元素区域重叠</li>
+<li>计算 <code>BFC</code> 的高度时，浮动子元素也参与计算</li>
+<li>文字层不会被浮动层覆盖，环绕于周围</li>
+</ul>
+<h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><h2 id="说一下标签的用法"><a href="#说一下标签的用法" class="headerlink" title="说一下标签的用法"></a>说一下<label>标签的用法</h2><p>label标签主要是方便鼠标点击使用，扩大可点击的范围，增强用户操作体验</p>
+<h2 id="遍历A节点的父节点下的所有子节点"><a href="#遍历A节点的父节点下的所有子节点" class="headerlink" title="遍历A节点的父节点下的所有子节点"></a>遍历A节点的父节点下的所有子节点</h2><blockquote>
+<p>这题考查原生的js操作dom,属于非常简单的基础题，但长时间使用mvvm框架，可能会忘记</p>
+</blockquote>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    var b=document.getElementById(&quot;a&quot;).parentNode.children;</span><br><span class="line">    console.log(b)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><h2 id="用js递归的方式写1到100求和？"><a href="#用js递归的方式写1到100求和？" class="headerlink" title="用js递归的方式写1到100求和？"></a>用js递归的方式写1到100求和？</h2><blockquote>
+<p>递归我们经常用到，vue在实现双向绑定进行数据检验的时候用的也是递归，但要我们面试的时候手写一个递归，如果对递归的概念理解不透彻，可能还是会有一些问题。</p>
+</blockquote>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function add(num1,num2)&#123;</span><br><span class="line">	var num = num1+num2;</span><br><span class="line">        if(num2+1&gt;100)&#123;</span><br><span class="line">	 return num;</span><br><span class="line">	&#125;else&#123;</span><br><span class="line">	  return add(num,num2+1)</span><br><span class="line">        &#125;</span><br><span class="line"> &#125;</span><br><span class="line">var sum =add(1,2);                 </span><br></pre></td></tr></table></figure>
+
+<h2 id="页面渲染html的过程？"><a href="#页面渲染html的过程？" class="headerlink" title="页面渲染html的过程？"></a>页面渲染html的过程？</h2><blockquote>
+<p>不需要死记硬背，理解整个过程即可</p>
+</blockquote>
+<p>浏览器渲染页面的一般过程：</p>
+<p>1.浏览器解析html源码，然后创建一个 DOM树。并行请求 css/image/js在DOM树中，每一个HTML标签都有一个对应的节点，并且每一个文本也都会有一个对应的文本节点。DOM树的根节点就是 documentElement，对应的是html标签。</p>
+<p>2.浏览器解析CSS代码，计算出最终的样式数据。构建CSSOM树。对CSS代码中非法的语法它会直接忽略掉。解析CSS的时候会按照如下顺序来定义优先级：浏览器默认设置 &lt; 用户设置 &lt; 外链样式 &lt; 内联样式 &lt; html中的style。</p>
+<p>3.DOM Tree + CSSOM –&gt; 渲染树（rendering tree）。渲染树和DOM树有点像，但是是有区别的。</p>
+<p>DOM树完全和html标签一一对应，但是渲染树会忽略掉不需要渲染的元素，比如head、display:none的元素等。而且一大段文本中的每一个行在渲染树中都是独立的一个节点。渲染树中的每一个节点都存储有对应的css属性。</p>
+<p>4.一旦渲染树创建好了，浏览器就可以根据渲染树直接把页面绘制到屏幕上。</p>
+<p>以上四个步骤并不是一次性顺序完成的。如果DOM或者CSSOM被修改，以上过程会被重复执行。实际上，CSS和JavaScript往往会多次修改DOM或者CSSOM。</p>
+<h2 id="说一下CORS？"><a href="#说一下CORS？" class="headerlink" title="说一下CORS？"></a>说一下CORS？</h2><p>CORS是一种新标准，支持同源通信，也支持跨域通信。fetch是实现CORS通信的</p>
+<h2 id="如何中断ajax请求？"><a href="#如何中断ajax请求？" class="headerlink" title="如何中断ajax请求？"></a>如何中断ajax请求？</h2><p>一种是设置超时时间让ajax自动断开，另一种是手动停止ajax请求，其核心是调用XML对象的abort方法，ajax.abort()</p>
+<h2 id="说一下事件代理？"><a href="#说一下事件代理？" class="headerlink" title="说一下事件代理？"></a>说一下事件代理？</h2><p>事件委托是指将事件绑定到目标元素的父元素上，利用冒泡机制触发该事件</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ulEl.addEventListener(&#x27;click&#x27;, function(e)&#123;</span><br><span class="line">    var target = event.target || event.srcElement;</span><br><span class="line">    if(!!target &amp;&amp; target.nodeName.toUpperCase() === &quot;LI&quot;)&#123;</span><br><span class="line">        console.log(target.innerHTML);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;, false);</span><br></pre></td></tr></table></figure>
+
+<h2 id="target、currentTarget的区别？"><a href="#target、currentTarget的区别？" class="headerlink" title="target、currentTarget的区别？"></a>target、currentTarget的区别？</h2><p>currentTarget当前所绑定事件的元素</p>
+<p>target当前被点击的元素</p>
+<h2 id="说一下宏任务和微任务？"><a href="#说一下宏任务和微任务？" class="headerlink" title="说一下宏任务和微任务？"></a>说一下宏任务和微任务？</h2><ol>
+<li>宏任务：当前调用栈中执行的任务称为宏任务。（主代码快，定时器等等）。</li>
+<li>微任务： 当前（此次事件循环中）宏任务执行完，在下一个宏任务开始之前需要执行的任务为微任务。（可以理解为回调事件，promise.then，proness.nextTick等等）。</li>
+<li>宏任务中的事件放在callback queue中，由事件触发线程维护；微任务的事件放在微任务队列中，由js引擎线程维护。</li>
+</ol>
+<h2 id="说一下继承的几种方式及优缺点？"><a href="#说一下继承的几种方式及优缺点？" class="headerlink" title="说一下继承的几种方式及优缺点？"></a>说一下继承的几种方式及优缺点？</h2><blockquote>
+<p>说比较经典的几种继承方式并比较优缺点就可以了</p>
+</blockquote>
+<ol>
+<li>借用构造函数继承，使用call或apply方法，将父对象的构造函数绑定在子对象上</li>
+<li>原型继承，将子对象的prototype指向父对象的一个实例</li>
+<li>组合继承</li>
+</ol>
+<p>原型链继承的缺点</p>
+<ul>
+<li>字面量重写原型会中断关系，使用引用类型的原型，并且子类型还无法给超类型传递参数。</li>
+</ul>
+<p>借用构造函数（类式继承）</p>
+<ul>
+<li>借用构造函数虽然解决了刚才两种问题，但没有原型，则复用无从谈起。</li>
+</ul>
+<p>组合式继承</p>
+<ul>
+<li>组合式继承是比较常用的一种继承方法，其背后的思路是使用原型链实现对原型属性和方法的继承，而通过借用构造函数来实现对实例属性的继承。这样，既通过在原型上定义方法实现了函数复用，又保证每个实例都有它自己的属性。</li>
+</ul>
+<h2 id="说一下闭包？"><a href="#说一下闭包？" class="headerlink" title="说一下闭包？"></a>说一下闭包？</h2><p>闭包的实质是因为函数嵌套而形成的作用域链</p>
+<p>闭包的定义即：函数 <code>A</code> 内部有一个函数 <code>B</code>，函数 <code>B</code> 可以访问到函数 <code>A</code> 中的变量，那么函数 <code>B</code> 就是闭包</p>
+<h2 id="export和export-default的区别？"><a href="#export和export-default的区别？" class="headerlink" title="export和export default的区别？"></a>export和export default的区别？</h2><p>使用上的不同</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">export default  xxx</span><br><span class="line">import xxx from &#x27;./&#x27;</span><br><span class="line"></span><br><span class="line">export xxx</span><br><span class="line">import &#123;xxx&#125; from &#x27;./&#x27;</span><br></pre></td></tr></table></figure>
+
+<h2 id="说一下自己常用的es6的功能？"><a href="#说一下自己常用的es6的功能？" class="headerlink" title="说一下自己常用的es6的功能？"></a>说一下自己常用的es6的功能？</h2><blockquote>
+<p>此题是一道开放题，可以自由回答。但要注意像let这种简单的用法就别说了，说一些经常用到并有一定高度的新功能</p>
+</blockquote>
+<p>像module、class、promise等，尽量讲的详细一点。</p>
+<h2 id="什么是会话cookie-什么是持久cookie"><a href="#什么是会话cookie-什么是持久cookie" class="headerlink" title="什么是会话cookie,什么是持久cookie?"></a>什么是会话cookie,什么是持久cookie?</h2><p>cookie是服务器返回的，指定了expire time（有效期）的是持久cookie,没有指定的是会话cookie</p>
+<h2 id="数组去重？"><a href="#数组去重？" class="headerlink" title="数组去重？"></a>数组去重？</h2><blockquote>
+<p>此题看着简单，但要想面试官给你高分还是有难度的。至少也要写出几种方法</p>
+</blockquote>
+<p>js</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">var arr=[&#x27;12&#x27;,&#x27;32&#x27;,&#x27;89&#x27;,&#x27;12&#x27;,&#x27;12&#x27;,&#x27;78&#x27;,&#x27;12&#x27;,&#x27;32&#x27;];</span><br><span class="line">    // 最简单数组去重法</span><br><span class="line">    function unique1(array)&#123;</span><br><span class="line">        var n = []; //一个新的临时数组</span><br><span class="line">        for(var i = 0; i &lt; array.length; i++)&#123; //遍历当前数组</span><br><span class="line">            if (n.indexOf(array[i]) == -1)</span><br><span class="line">                n.push(array[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        return n;</span><br><span class="line">    &#125;</span><br><span class="line">    arr=unique1(arr);</span><br><span class="line">    // 速度最快， 占空间最多（空间换时间）</span><br><span class="line">    function unique2(array)&#123;</span><br><span class="line">        var n = &#123;&#125;, r = [], type;</span><br><span class="line">        for (var i = 0; i &lt; array.length; i++) &#123;</span><br><span class="line">            type = typeof array[i];</span><br><span class="line">            if (!n[array[i]]) &#123;</span><br><span class="line">                n[array[i]] = [type];</span><br><span class="line">                r.push(array[i]);</span><br><span class="line">            &#125; else if (n[array[i]].indexOf(type) &lt; 0) &#123;</span><br><span class="line">                n[array[i]].push(type);</span><br><span class="line">                r.push(array[i]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return r;</span><br><span class="line">    &#125;</span><br><span class="line">    //数组下标判断法</span><br><span class="line">    function unique3(array)&#123;</span><br><span class="line">        var n = [array[0]]; //结果数组</span><br><span class="line">        for(var i = 1; i &lt; array.length; i++) &#123; //从第二项开始遍历</span><br><span class="line">            if (array.indexOf(array[i]) == i) </span><br><span class="line">                n.push(array[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        return n;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>es6</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">es6方法数组去重</span><br><span class="line">arr=[...new Set(arr)];</span><br><span class="line">es6方法数组去重，第二种方法</span><br><span class="line">function dedupe(array) &#123;</span><br><span class="line">  return Array.from(new Set(array));       //Array.from()能把set结构转换为数组</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="get、post的区别"><a href="#get、post的区别" class="headerlink" title="get、post的区别"></a>get、post的区别</h2><blockquote>
+<p>此题比较简单，但一定要回答的全面</p>
+</blockquote>
+<p>1.get传参方式是通过地址栏URL传递，是可以直接看到get传递的参数，post传参方式参数URL不可见，get把请求的数据在URL后通过？连接，通过&amp;进行参数分割。psot将参数存放在HTTP的包体内</p>
+<p>2.get传递数据是通过URL进行传递，对传递的数据长度是受到URL大小的限制，URL最大长度是2048个字符。post没有长度限制</p>
+<p>3.get后退不会有影响，post后退会重新进行提交</p>
+<p>4.get请求可以被缓存，post不可以被缓存</p>
+<p>5.get请求只URL编码，post支持多种编码方式</p>
+<p>6.get请求的记录会留在历史记录中，post请求不会留在历史记录</p>
+<p>7.get只支持ASCII字符，post没有字符类型限制</p>
+<h2 id="你所知道的http的响应码及含义？"><a href="#你所知道的http的响应码及含义？" class="headerlink" title="你所知道的http的响应码及含义？"></a>你所知道的http的响应码及含义？</h2><blockquote>
+<p>此题有过开发经验的都知道几个，但还是那句话，一定要回答的详细且全面。</p>
+</blockquote>
+<p>1xx(临时响应)</p>
+<p>100: 请求者应当继续提出请求。</p>
+<p>101(切换协议) 请求者已要求服务器切换协议，服务器已确认并准备进行切换。</p>
+<p>2xx(成功)</p>
+<p>200：正确的请求返回正确的结果</p>
+<p>201：表示资源被正确的创建。比如说，我们 POST 用户名、密码正确创建了一个用户就可以返回 201。</p>
+<p>202：请求是正确的，但是结果正在处理中，这时候客户端可以通过轮询等机制继续请求。</p>
+<p>3xx(已重定向)</p>
+<p>300：请求成功，但结果有多种选择。</p>
+<p>301：请求成功，但是资源被永久转移。</p>
+<p>303：使用 GET 来访问新的地址来获取资源。</p>
+<p>304：请求的资源并没有被修改过</p>
+<p>4xx(请求错误)</p>
+<p>400：请求出现错误，比如请求头不对等。</p>
+<p>401：没有提供认证信息。请求的时候没有带上 Token 等。</p>
+<p>402：为以后需要所保留的状态码。</p>
+<p>403：请求的资源不允许访问。就是说没有权限。</p>
+<p>404：请求的内容不存在。</p>
+<p>5xx(服务器错误)</p>
+<p>500：服务器错误。</p>
+<p>501：请求还没有被实现。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2020/09/04/%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%98/">http://example.com/2020/09/04/%E9%83%A8%E5%88%86%E9%9D%A2%E8%AF%95%E9%A2%98/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Hexo</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="http://www.obzhi.com/wp-content/uploads/2021/01/xuejing-1024x640.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/09/19/Vue%E8%AE%BE%E7%BD%AE%E8%B7%AF%E7%94%B1%E5%AF%BC%E8%88%AA%E7%9A%84%E6%96%B9%E6%B3%95/"><img class="prev-cover" src="http://www.obzhi.com/wp-content/uploads/2021/01/yueguang-1024x320.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Vue设置路由导航的方法</div></div></a></div><div class="next-post pull-right"><a href="/2020/07/11/%E8%BD%AE%E6%92%AD%E5%9B%BE%E7%9A%84%E4%BD%BF%E7%94%A8/"><img class="next-cover" src="http://www.obzhi.com/wp-content/uploads/2021/01/xuejing-1024x640.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">轮播图的使用</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xxxxx" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#calc-support-media%E5%90%84%E8%87%AA%E7%9A%84%E5%90%AB%E4%B9%89%E5%8F%8A%E7%94%A8%E6%B3%95%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">calc, support, media各自的含义及用法？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#css%E6%B0%B4%E5%B9%B3%E3%80%81%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E7%9A%84%E5%86%99%E6%B3%95%EF%BC%8C%E8%AF%B7%E8%87%B3%E5%B0%91%E5%86%99%E5%87%BA4%E7%A7%8D%EF%BC%9F"><span class="toc-number">2.</span> <span class="toc-text">css水平、垂直居中的写法，请至少写出4种？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1rem%E3%80%811em%E3%80%811vh%E3%80%811px%E5%90%84%E8%87%AA%E4%BB%A3%E8%A1%A8%E7%9A%84%E5%90%AB%E4%B9%89%EF%BC%9F"><span class="toc-number">3.</span> <span class="toc-text">1rem、1em、1vh、1px各自代表的含义？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%BB%E4%B8%80%E6%9D%A10-5px%E7%9A%84%E7%9B%B4%E7%BA%BF%EF%BC%9F"><span class="toc-number">4.</span> <span class="toc-text">画一条0.5px的直线？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E4%B8%8B%E7%9B%92%E6%A8%A1%E5%9E%8B%EF%BC%9F"><span class="toc-number">5.</span> <span class="toc-text">说一下盒模型？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%BB%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2%EF%BC%9F"><span class="toc-number">6.</span> <span class="toc-text">画一个三角形？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%8C%E5%8F%8A%E5%8E%9F%E7%90%86%EF%BC%9F"><span class="toc-number">7.</span> <span class="toc-text">清除浮动的几种方式，及原理？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#html"><span class="toc-number">8.</span> <span class="toc-text">html</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E4%B8%8B%E6%A0%87%E7%AD%BE%E7%9A%84%E7%94%A8%E6%B3%95"><span class="toc-number">9.</span> <span class="toc-text">说一下标签的用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%81%8D%E5%8E%86A%E8%8A%82%E7%82%B9%E7%9A%84%E7%88%B6%E8%8A%82%E7%82%B9%E4%B8%8B%E7%9A%84%E6%89%80%E6%9C%89%E5%AD%90%E8%8A%82%E7%82%B9"><span class="toc-number">10.</span> <span class="toc-text">遍历A节点的父节点下的所有子节点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#js"><span class="toc-number">11.</span> <span class="toc-text">js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8js%E9%80%92%E5%BD%92%E7%9A%84%E6%96%B9%E5%BC%8F%E5%86%991%E5%88%B0100%E6%B1%82%E5%92%8C%EF%BC%9F"><span class="toc-number">12.</span> <span class="toc-text">用js递归的方式写1到100求和？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E6%B8%B2%E6%9F%93html%E7%9A%84%E8%BF%87%E7%A8%8B%EF%BC%9F"><span class="toc-number">13.</span> <span class="toc-text">页面渲染html的过程？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E4%B8%8BCORS%EF%BC%9F"><span class="toc-number">14.</span> <span class="toc-text">说一下CORS？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%B8%AD%E6%96%ADajax%E8%AF%B7%E6%B1%82%EF%BC%9F"><span class="toc-number">15.</span> <span class="toc-text">如何中断ajax请求？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E4%B8%8B%E4%BA%8B%E4%BB%B6%E4%BB%A3%E7%90%86%EF%BC%9F"><span class="toc-number">16.</span> <span class="toc-text">说一下事件代理？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#target%E3%80%81currentTarget%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">17.</span> <span class="toc-text">target、currentTarget的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E4%B8%8B%E5%AE%8F%E4%BB%BB%E5%8A%A1%E5%92%8C%E5%BE%AE%E4%BB%BB%E5%8A%A1%EF%BC%9F"><span class="toc-number">18.</span> <span class="toc-text">说一下宏任务和微任务？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E4%B8%8B%E7%BB%A7%E6%89%BF%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F%E5%8F%8A%E4%BC%98%E7%BC%BA%E7%82%B9%EF%BC%9F"><span class="toc-number">19.</span> <span class="toc-text">说一下继承的几种方式及优缺点？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E4%B8%8B%E9%97%AD%E5%8C%85%EF%BC%9F"><span class="toc-number">20.</span> <span class="toc-text">说一下闭包？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#export%E5%92%8Cexport-default%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">21.</span> <span class="toc-text">export和export default的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E4%B8%8B%E8%87%AA%E5%B7%B1%E5%B8%B8%E7%94%A8%E7%9A%84es6%E7%9A%84%E5%8A%9F%E8%83%BD%EF%BC%9F"><span class="toc-number">22.</span> <span class="toc-text">说一下自己常用的es6的功能？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E4%BC%9A%E8%AF%9Dcookie-%E4%BB%80%E4%B9%88%E6%98%AF%E6%8C%81%E4%B9%85cookie"><span class="toc-number">23.</span> <span class="toc-text">什么是会话cookie,什么是持久cookie?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%EF%BC%9F"><span class="toc-number">24.</span> <span class="toc-text">数组去重？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#get%E3%80%81post%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">25.</span> <span class="toc-text">get、post的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%A0%E6%89%80%E7%9F%A5%E9%81%93%E7%9A%84http%E7%9A%84%E5%93%8D%E5%BA%94%E7%A0%81%E5%8F%8A%E5%90%AB%E4%B9%89%EF%BC%9F"><span class="toc-number">26.</span> <span class="toc-text">你所知道的http的响应码及含义？</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/19/%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%88%87%E6%8D%A2/" title="登录注册页面的切换"><img src="http://www.obzhi.com/wp-content/uploads/2020/11/%E9%BB%91%E7%8C%AB.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="登录注册页面的切换"/></a><div class="content"><a class="title" href="/2021/07/19/%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%88%87%E6%8D%A2/" title="登录注册页面的切换">登录注册页面的切换</a><time datetime="2021-07-19T06:54:30.000Z" title="发表于 2021-07-19 14:54:30">2021-07-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/16/%E5%A6%82%E4%BD%95%E5%BC%95%E7%94%A8element-UI%E7%BB%84%E4%BB%B6/" title="如何引用element-UI组件"><img src="http://www.obzhi.com/wp-content/uploads/2020/08/C3F0A095-EFA7-41F5-9162-CDE3FD83D6E1.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何引用element-UI组件"/></a><div class="content"><a class="title" href="/2021/03/16/%E5%A6%82%E4%BD%95%E5%BC%95%E7%94%A8element-UI%E7%BB%84%E4%BB%B6/" title="如何引用element-UI组件">如何引用element-UI组件</a><time datetime="2021-03-16T07:11:57.000Z" title="发表于 2021-03-16 15:11:57">2021-03-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/03/09/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE/" title="获取当前地理位置"><img src="http://www.obzhi.com/wp-content/uploads/2021/01/mojie2-1024x470.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="获取当前地理位置"/></a><div class="content"><a class="title" href="/2021/03/09/%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE/" title="获取当前地理位置">获取当前地理位置</a><time datetime="2021-03-09T06:31:58.000Z" title="发表于 2021-03-09 14:31:58">2021-03-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/12/08/Vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/" title="Vue响应式原理"><img src="http://www.obzhi.com/wp-content/uploads/2021/01/mojie2-1024x470.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vue响应式原理"/></a><div class="content"><a class="title" href="/2020/12/08/Vue%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86/" title="Vue响应式原理">Vue响应式原理</a><time datetime="2020-12-08T07:45:47.000Z" title="发表于 2020-12-08 15:45:47">2020-12-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/20/vue-js-%E4%BA%8C%E7%BA%A7%E8%B7%AF%E7%94%B1-%E4%B8%89%E7%BA%A7%E8%B7%AF%E7%94%B1/" title="vue.js 二级路由/三级路由"><img src="http://121.40.114.220/wp-content/uploads/2016/11/loner.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue.js 二级路由/三级路由"/></a><div class="content"><a class="title" href="/2020/11/20/vue-js-%E4%BA%8C%E7%BA%A7%E8%B7%AF%E7%94%B1-%E4%B8%89%E7%BA%A7%E8%B7%AF%E7%94%B1/" title="vue.js 二级路由/三级路由">vue.js 二级路由/三级路由</a><time datetime="2020-11-20T07:50:47.000Z" title="发表于 2020-11-20 15:50:47">2020-11-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By John Doe</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
